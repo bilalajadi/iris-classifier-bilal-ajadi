@@ -9,8 +9,8 @@ The dataset has 150 flowers, 4 measurements each (sepal length, sepal width, pet
 ## Quick start
 
 ```bash
-git clone https://github.com/bilalajadi/iris-classifier.git
-cd iris-classifier
+git clone https://github.com/bilalajadi/iris-classifier-bilal-ajadi.git
+cd iris-classifier-bilal-ajadi
 python -m venv venv
 source venv/bin/activate        # macOS / Linux
 # venv\Scripts\activate         # Windows Command Prompt
@@ -58,7 +58,7 @@ The tree's first split is on petal length (≤ 2.45 cm → setosa), which separa
 ### Limitations
 
 - 30 test samples is a small test set: each mistake moves accuracy by 3.3 percentage points, and other random splits score lower (5-fold cross-validation gives 90–100% per fold). Cross-validation would give a more reliable estimate.
-- - By default the tree is grown to full depth, which fits the training data perfectly and would overfit noisier data. The `--max-depth` option limits it: `--max-depth 2` scores 0.967 (29/30), with one versicolor misclassified as virginica.
+- By default the tree is grown to full depth, which fits the training data perfectly and would overfit noisier data. The `--max-depth` option limits it: `--max-depth 2` scores 0.967 (29/30), with one versicolor misclassified as virginica.
 
 ## Project structure
 
